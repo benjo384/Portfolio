@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joben Sarmiento | BSIT Student Profile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#ffffff',
+                        secondary: '#fbbf24',
+                        accent: '#1c3c6f',
+                        'bg-light': '#f9fafb',
+                        'bg-dark': '#0f172a',
+                        'card-light': '#ffffff',
+                        'card-dark': '#1e293b',
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <style>
+        html { scroll-behavior: smooth; }
+        .mobile-nav-link {
+             padding-top: 0.75rem;
+             padding-bottom: 0.75rem;
+        }
+    </style>
+</head>
+
+<body class="bg-bg-light dark:bg-bg-dark text-gray-800 dark:text-gray-100 font-sans transition-colors duration-500">
+
+    <nav id="navbar" class="sticky top-0 z-50 bg-card-light/95 dark:bg-bg-dark/95 shadow-lg backdrop-blur-sm transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
+            <a href="#home" class="font-extrabold text-lg sm:text-2xl text-accent dark:text-secondary hover:text-secondary transition duration-150">
+                JOBEN SARMIENTO
+            </a>
+            
+            <div class="hidden sm:flex sm:space-x-4">
+                <a href="#about" class="px-3 py-2 rounded-lg text-sm font-medium hover:text-accent transition-all">Profile & Skills</a>
+                <a href="#credentials" class="px-3 py-2 rounded-lg text-sm font-medium hover:text-accent transition-all">Education History</a>
+            </div>
+
+            <div class="flex items-center space-x-2">
+                <button id="theme-toggle" class="p-2 rounded-full text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition">
+                    <i id="theme-icon" class="fa-solid fa-sun text-lg"></i>
+                </button>
+                
+                <button id="mobile-menu-button" class="sm:hidden p-2 rounded-full text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition">
+                    <i id="menu-icon" class="fa-solid fa-bars text-lg"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div id="mobile-menu" class="hidden sm:hidden px-2 pt-2 pb-3 space-y-1 bg-card-light dark:bg-card-dark shadow-inner">
+            <a href="#about" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700">Profile & Skills</a>
+            <a href="#credentials" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700">Education History</a>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto py-8 px-6 sm:px-8 lg:px-8">
+
+        <section id="home" class="min-h-[85vh] pt-24 pb-12 flex flex-col justify-center items-center text-center">
+            
+            <div class="w-32 h-32 md:w-48 md:h-48 rounded-full shadow-2xl ring-4 ring-secondary/50 mb-6 overflow-hidden">
+                <img src="https://placehold.co/200x200/1c3c6f/ffffff?text=Add+Your+GitHub+Image" 
+                     alt="Joben Sarmiento Profile Picture" 
+                     class="object-cover w-full h-full">
+            </div>
+            
+            <div class="space-y-3 max-w-4xl mx-auto">
+                <span class="text-secondary font-bold uppercase tracking-widest text-xs">21 YEARS OLD | PASAY CITY</span>
+                <h1 class="text-4xl sm:text-6xl lg:text-7xl font-black leading-tight text-gray-900 dark:text-white">
+                    JOBEN L. SARMIENTO
+                </h1>
+                <h2 class="text-xl sm:text-2xl font-light text-accent dark:text-secondary">
+                    2nd Year B.S. Information Technology
+                </h2>
+                <h3 class="text-lg font-light text-gray-700 dark:text-gray-300">
+                    Arellano University Jose Abad Santos
+                </h3>
+
+                <p class="text-base sm:text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto pt-4">
+                    A dedicated 2nd-year student pursuing Information Technology, focused on building foundational programming knowledge and exploring how technology solves real-world challenges.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4 justify-center pt-6">
+                    <a href="#about" class="w-full sm:w-auto px-6 py-3 bg-accent text-white font-semibold rounded-full hover:bg-accent/90 transition shadow-lg text-center transform hover:scale-105">
+                        View Profile & Skills <i class="fa-solid fa-user-gear ml-2"></i>
+                    </a>
+                    <a href="#credentials" class="w-full sm:w-auto px-6 py-3 border border-secondary text-secondary font-semibold rounded-full hover:bg-secondary/10 dark:hover:bg-secondary/20 transition text-center transform hover:scale-105">
+                        See Education History
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-16 sm:py-24">
+            <div class="text-center mb-12 sm:mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-2">My Profile & Technical Foundation</h2>
+                <div class="w-16 h-1 bg-accent dark:bg-secondary mx-auto rounded"></div>
+            </div>
+            
+            <div class="max-w-4xl mx-auto space-y-10 sm:space-y-12">
+                
+                <div>
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3 flex items-center">
+                        <i class="fa-solid fa-circle-info mr-3 text-secondary"></i> About My Journey
+                    </h3>
+                    <p class="text-base leading-relaxed border-l-4 border-accent pl-4 mb-3">
+                        As a 2nd-year IT student, my goal is to translate academic theory into tangible, functional software. I am focused on absorbing knowledge from my coursework and preparing for future roles in software development or systems management.
+                    </p>
+                    <p class="text-base leading-relaxed font-semibold text-gray-700 dark:text-gray-300">
+                        I am currently developing my professional portfolio by working on personal coding challenges and academic requirements, committed to continuous learning and growth.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-6 flex items-center border-t pt-8 border-gray-200 dark:border-gray-700">
+                        <i class="fa-solid fa-gears mr-3 text-secondary"></i> Core Competencies
+                    </h3>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6">
+                        
+                        <div class="p-4 bg-card-light dark:bg-card-dark rounded-xl shadow border-l-4 border-secondary hover:shadow-xl transition">
+                            <i class="fa-solid fa-code text-2xl text-accent mb-2"></i>
+                            <h4 class="text-lg font-bold">Programming</h4>
+                            <p class="text-sm text-gray-500 dark:text-gray-400">Python, Java, JavaScript, and C fundamentals.</p>
+                        </div>
+
+                        <div class="p-4 bg-card-light dark:bg-card-dark rounded-xl shadow border-l-4 border-secondary hover:shadow-xl transition">
+                            <i class="fa-solid fa-server text-2xl text-accent mb-2"></i>
+                            <h4 class="text-lg font-bold">Systems & DB</h4>
+                            <p class="text-sm text-gray-500 dark:text-gray-400">SQL/NoSQL concepts and basic OS principles.</p>
+                        </div>
+
+                        <div class="p-4 bg-card-light dark:bg-card-dark rounded-xl shadow border-l-4 border-secondary hover:shadow-xl transition">
+                            <i class="fa-brands fa-git-alt text-2xl text-accent mb-2"></i>
+                            <h4 class="text-lg font-bold">Dev Tools</h4>
+                            <p class="text-sm text-gray-500 dark:text-gray-400">Version control (Git/GitHub) and software engineering basics.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="credentials" class="py-16 sm:py-24">
+            <div class="text-center mb-12 sm:mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-2">Education History</h2>
+                <div class="w-16 h-1 bg-secondary dark:bg-accent mx-auto rounded"></div>
+            </div>
+
+            <div class="max-w-lg mx-auto p-6 sm:p-8 bg-card-light dark:bg-card-dark rounded-xl shadow-xl">
+                <h3 class="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 flex items-center text-accent dark:text-secondary border-b pb-3 border-gray-100 dark:border-gray-700">
+                    <i class="fa-solid fa-user-graduate mr-3"></i> Academic Credentials
+                </h3>
+                <div class="space-y-4 sm:space-y-6">
+                    <div class="border-l-4 border-secondary pl-4">
+                        <p class="text-lg font-bold">B.S. in Information Technology</p>
+                        <p class="text-sm font-medium text-gray-600 dark:text-gray-400">Arellano University Jose Abad Santos</p>
+                        <span class="text-xs text-accent font-semibold">2nd Year Student | Pasay City</span>
+                    </div>
+                    <div class="border-l-4 border-secondary pl-4">
+                        <p class="text-lg font-bold">High School & Senior High School</p>
+                        <p class="text-sm font-medium text-gray-600 dark:text-gray-400">Southeastern College</p>
+                        <span class="text-xs text-accent font-semibold">Completed Secondary Education</span>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        
+    </main>
+
+    <footer class="bg-gray-200 dark:bg-gray-900 py-6 sm:py-8 mt-12 shadow-inner">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-sm text-gray-600 dark:text-gray-400">
+                &copy; <span id="current-year"></span> Joben L. Sarmiento Digital Profile.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggle = document.getElementById('theme-toggle');
+            const themeIcon = document.getElementById('theme-icon');
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuIcon = document.getElementById('menu-icon');
+            const html = document.documentElement;
+
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+
+            const setTheme = (isDark) => {
+                if (isDark) {
+                    html.classList.add('dark');
+                    themeIcon.classList.replace('fa-sun', 'fa-moon');
+                    localStorage.setItem('theme', 'dark');
+                } else {
+                    html.classList.remove('dark');
+                    themeIcon.classList.replace('fa-moon', 'fa-sun');
+                    localStorage.setItem('theme', 'light');
+                }
+            };
+
+            const savedTheme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+            if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+                setTheme(true);
+            } else {
+                setTheme(false);
+            }
+
+            themeToggle.addEventListener('click', () => {
+                const isDark = html.classList.contains('dark');
+                setTheme(!isDark);
+            });
+            
+            const toggleMobileMenu = () => {
+                const isMenuOpen = mobileMenu.classList.toggle('hidden');
+                if (isMenuOpen) {
+                    menuIcon.classList.replace('fa-xmark', 'fa-bars');
+                } else {
+                    menuIcon.classList.replace('fa-bars', 'fa-xmark');
+                }
+            };
+
+            mobileMenuButton.addEventListener('click', toggleMobileMenu);
+
+            mobileMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        toggleMobileMenu();
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
