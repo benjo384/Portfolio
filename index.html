@@ -52,8 +52,8 @@
             </div>
 
             <div class="flex items-center space-x-2">
-                <button id="theme-toggle" class="p-2 rounded-full text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition">
-                    <i id="theme-icon" class="fa-solid fa-sun text-lg text-yellow-400"></i>
+                <button id="theme-toggle" class="p-3 rounded-full text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition bg-gray-100 dark:bg-gray-800">
+                    <i id="theme-icon" class="fa-solid fa-sun text-3xl text-yellow-400"></i>
                 </button>
                 
                 <button id="mobile-menu-button" class="sm:hidden p-2 rounded-full text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition">
@@ -224,10 +224,10 @@
             const savedTheme = localStorage.getItem('theme');
             const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
-            if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
-                setTheme(true);
-            } else {
+            if (savedTheme === 'light') {
                 setTheme(false);
+            } else {
+                setTheme(true);
             }
 
             themeToggle.addEventListener('click', () => {
